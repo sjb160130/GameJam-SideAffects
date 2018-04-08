@@ -61,7 +61,9 @@ public class MC_Movement : MonoBehaviour {
     void FlipPlayer()
     {
         faceRight = !faceRight;
-        Vector2 localScale = gameObject.transform.localScale;
+        //transform.Rotate(0, 180, 0);
+        Vector3 localScale = gameObject.transform.localScale;
+        //transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         localScale.x *= -1;
         transform.localScale = localScale;
     }

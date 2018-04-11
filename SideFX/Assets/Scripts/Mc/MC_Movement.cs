@@ -30,7 +30,7 @@ public class MC_Movement : MonoBehaviour {
 
     //Moving
     void McMove()
-    {
+    {   
         //Controls
         moveX = Input.GetAxis("Horizontal");
 

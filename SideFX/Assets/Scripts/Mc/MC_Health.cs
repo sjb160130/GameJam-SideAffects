@@ -18,7 +18,7 @@ public class MC_Health : MonoBehaviour {
 
     void Die()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Lose");
     }
     private void OnTriggerEnter2D(Collider2D trig)
     {

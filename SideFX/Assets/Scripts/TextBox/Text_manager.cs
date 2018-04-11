@@ -16,7 +16,7 @@ public class Text_manager : MonoBehaviour {
 
     public MC_Movement player;
 
-    public bool isActive;
+    public bool isActive = false;
     public bool isTyping = false;
     private bool cancelTyping = false;
 
@@ -25,6 +25,7 @@ public class Text_manager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        DisableTextBox();
         player = FindObjectOfType<MC_Movement>();
 
         if (textfile != null)

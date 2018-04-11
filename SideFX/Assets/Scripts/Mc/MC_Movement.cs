@@ -10,6 +10,7 @@ public class MC_Movement : MonoBehaviour {
     public int mcJumpPower = 1250;
     private float moveX;
     public bool falling = false;
+    public PotionGun potiongun;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +20,11 @@ public class MC_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         McMove();
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            
+           potiongun.Shoot();
+        }
     }
 
     //Limit jumps

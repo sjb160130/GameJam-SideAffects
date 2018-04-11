@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PotionGun.cs" />
     <Compile Include="Assets\Scripts\Camera_System.cs" />
     <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
@@ -291,6 +292,7 @@
     <Compile Include="Assets\Scripts\Mc\MC_Movement.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_ThrowGrab.cs" />
     <Compile Include="Assets\Scripts\Mc\Player_Potions.cs" />
+    <Compile Include="Assets\Scripts\PotionControl.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />

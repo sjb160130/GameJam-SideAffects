@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41105060}
   - component: {fileID: 41105061}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stonefloor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 204806935}
   - component: {fileID: 204806934}
   - component: {fileID: 204806933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -819,7 +819,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 278509930}
-  m_Layer: 0
+  - component: {fileID: 278509931}
+  m_Layer: 12
   m_Name: ThrowPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,12 +834,28 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 278509929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.86, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420369988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &278509931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278509929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246f000b0eead60449caf7d38a5391e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isShooting: 0
+  potion: {fileID: 114402866859487974, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+  potionSpeed: 10
+  timeBetweenthrow: 0.5
+  firePoint: {fileID: 278509930}
 --- !u!1 &339523886
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +945,7 @@ GameObject:
   - component: {fileID: 420369990}
   - component: {fileID: 420369992}
   - component: {fileID: 420369986}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: MC
   m_TagString: player
   m_Icon: {fileID: 0}
@@ -1042,6 +1059,7 @@ MonoBehaviour:
   mcSpeed: 5
   mcJumpPower: 800
   falling: 0
+  potiongun: {fileID: 278509931}
 --- !u!114 &420369990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543038141}
   - component: {fileID: 543038140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549970072}
   - component: {fileID: 549970073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stonefloor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1407,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 672490938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1426,7 +1444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787394678}
   - component: {fileID: 787394677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundbelow (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1499,7 +1517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867333930}
   - component: {fileID: 867333929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundbelow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1572,7 +1590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870224002}
   - component: {fileID: 870224001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundbelow (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1865,7 +1883,7 @@ GameObject:
   - component: {fileID: 1056346784}
   - component: {fileID: 1056346783}
   - component: {fileID: 1056346782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1985,7 +2003,7 @@ GameObject:
   - component: {fileID: 1062368100}
   - component: {fileID: 1062368099}
   - component: {fileID: 1062368098}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2205,7 +2223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126708673}
   - component: {fileID: 1126708674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stonefloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2278,7 +2296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210402347}
   - component: {fileID: 1210402348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stonefloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2351,7 +2369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260015094}
   - component: {fileID: 1260015095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2424,7 +2442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284336193}
   - component: {fileID: 1284336192}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2499,7 +2517,7 @@ GameObject:
   - component: {fileID: 1307926222}
   - component: {fileID: 1307926221}
   - component: {fileID: 1307926220}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2619,7 +2637,7 @@ GameObject:
   - component: {fileID: 1389400314}
   - component: {fileID: 1389400313}
   - component: {fileID: 1389400312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2739,7 +2757,7 @@ GameObject:
   - component: {fileID: 1418969815}
   - component: {fileID: 1418969817}
   - component: {fileID: 1418969818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3176,7 +3194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786125611}
   - component: {fileID: 1786125612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3338,6 +3356,48 @@ MonoBehaviour:
   xMax: 1000
   yMin: -1.44
   yMax: 1000
+--- !u!1001 &1800369411
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 31.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.63805705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283327936670110, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1922595876
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,7 +3407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1922595877}
   - component: {fileID: 1922595878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stonefloor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3422,7 +3482,7 @@ GameObject:
   - component: {fileID: 1949653491}
   - component: {fileID: 1949653490}
   - component: {fileID: 1949653489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3615,7 +3675,7 @@ GameObject:
   - component: {fileID: 2093819028}
   - component: {fileID: 2093819027}
   - component: {fileID: 2093819026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground (2)
   m_TagString: ground
   m_Icon: {fileID: 0}

@@ -9,6 +9,8 @@ public class Enemy_Move : MonoBehaviour {
     public GameObject Text_Manager;
     private bool scared = true;
     private bool done = false;
+    public TextAsset textfile1;
+    
 
     // Update is called once per frame
     void Update()
@@ -24,16 +26,16 @@ public class Enemy_Move : MonoBehaviour {
         RaycastHit2D see = Physics2D.Raycast(transform.position, new Vector2(XMoveDirection, 0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection, 0) * EnemySpeed;
         //adjust less then to character size
-        if (see.distance < 4f && scared == true)
+        if ((see.distance < 7f) && scared == true)
         {
-            Text_Manager.GetComponent<Text_manager>().EnableTextBox();
+            Debug.Log("we");
+            Text_Manager.GetComponent<Text_manager1>().EnableTextBox();
             EnemySpeed = 0;
             scared = false;
         }
         if (scared == false)
         {
             BearRunsAgain();
-            Debug.Log("Oh boi");
         }
    }
     void BearRunsAgain()

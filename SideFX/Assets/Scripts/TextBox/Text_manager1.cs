@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Text_manager : MonoBehaviour {
+public class Text_manager1 : MonoBehaviour {
     public TextAsset textfile;
     public string[] textLines;
 
@@ -20,7 +20,7 @@ public class Text_manager : MonoBehaviour {
     public bool isActive = false;
     public bool isTyping = false;
     private bool cancelTyping = false;
-
+    public bool isAwake = false;
     public float typeSpeed;
 
     // Use this for initialization
@@ -43,7 +43,7 @@ public class Text_manager : MonoBehaviour {
    void Update()
     {
         //Return
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && isAwake == true)
         {
             if (!isTyping)
             {
@@ -89,17 +89,16 @@ public class Text_manager : MonoBehaviour {
 
     //call this to bring box back
     public void EnableTextBox() {
-
         textBox.SetActive(true);
         StartCoroutine(TextScroll(textLines[currentLines]));
     }
     //call this to hide box
-    public void DisableTextBox()
-    {
+    public void DisableTextBox() {
         currentLines = 0;
         endAtLine = 0;
         textBox.SetActive(false);
     }
+
     public void ReloadScript(TextAsset theText)
     {
         textLines = new string[1];

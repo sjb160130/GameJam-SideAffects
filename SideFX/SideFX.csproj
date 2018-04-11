@@ -283,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera_System.cs" />
+    <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\Enemy_Move.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Animator.cs" />
@@ -292,9 +293,11 @@
     <Compile Include="Assets\Scripts\Mc\Player_Potions.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
+    <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextFiles\test.txt" />
+    <None Include="Assets\TextFiles\Bear.txt" />
+    <None Include="Assets\TextFiles\Potion.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

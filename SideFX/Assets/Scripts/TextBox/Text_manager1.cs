@@ -101,6 +101,8 @@ public class Text_manager1 : MonoBehaviour {
 
     public void ReloadScript(TextAsset theText)
     {
+        currentLines = 0;
+        endAtLine = 0;
         textLines = new string[1];
     }
 }

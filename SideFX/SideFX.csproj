@@ -300,6 +300,8 @@
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />
+    <Compile Include="Assets\sludge.cs" />
+    <Compile Include="Assets\TimeExplosionScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextFiles\Bear.txt" />

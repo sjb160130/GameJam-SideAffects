@@ -15,6 +15,7 @@ TagManager:
   - Poison
   - Ice
   - Heal
+  - TimeSlow
   layers:
   - Default
   - TransparentFX

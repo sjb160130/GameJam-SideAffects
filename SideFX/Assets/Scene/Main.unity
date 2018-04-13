@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isShooting: 0
-  potion: {fileID: 114402866859487974, guid: d561b89e1b12c184fbe686634a56a3e5, type: 2}
+  potion: {fileID: 0}
   CurrPotion: {fileID: 1534335817492812, guid: a476b221ac2e5264ca3fb72ccbafb13a, type: 2}
   potionSpeed: 10
   timeBetweenthrow: 0.5
@@ -7169,7 +7169,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 84}
+=======
+  m_AnchoredPosition: {x: -2, y: 84}
+>>>>>>> Connor
   m_SizeDelta: {x: 667, y: 233}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1355894801

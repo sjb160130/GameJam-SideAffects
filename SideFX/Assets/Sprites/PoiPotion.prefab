@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212269795941842232}
   - component: {fileID: 50316714689571938}
   - component: {fileID: 58840887719589794}
-  - component: {fileID: 114402866859487974}
   - component: {fileID: 114170401297597328}
   m_Layer: 11
   m_Name: PoiPotion
@@ -90,13 +89,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228de450a3ce1844284404fdc48b45b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 300
+  thrust: 400
   potion: {fileID: 1534335817492812}
   MissLayer:
     serializedVersion: 2
     m_Bits: 512
   TimeExplosion: {fileID: 1409761281442668, guid: 93dabe91605222b4a877cb91ae94e2e9,
     type: 2}
+<<<<<<< HEAD
   timer: 3
 --- !u!114 &114402866859487974
 MonoBehaviour:
@@ -115,6 +115,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   TimeExplosion: {fileID: 0}
+=======
+  Sludge: {fileID: 1668471754082892, guid: 660fcf0b74c041845b9411e523607c32, type: 2}
+>>>>>>> Connor
   timer: 3
 --- !u!212 &212269795941842232
 SpriteRenderer:

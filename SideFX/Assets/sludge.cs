@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+=======
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+>>>>>>> Connor
 public class sludge : MonoBehaviour {
 
     Transform tran;
@@ -10,9 +17,15 @@ public class sludge : MonoBehaviour {
     private bool grow=true;
     void Start () {
         tran = GetComponent<Transform>();
+<<<<<<< HEAD
     }
 	
 	// Update is called once per frame
+=======
+    }
+	
+	// Update is called once per frame
+>>>>>>> Connor
 	void Update () {
         if (grow)
         {
@@ -23,5 +36,10 @@ public class sludge : MonoBehaviour {
             grow = false;
             Destroy(gameObject, 2f);
         }
+<<<<<<< HEAD
     }
 }
+=======
+    }
+}
+>>>>>>> Connor

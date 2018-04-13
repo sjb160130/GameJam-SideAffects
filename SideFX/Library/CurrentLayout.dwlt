@@ -134,9 +134,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1536
     height: 731
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 136
 =======
     width: 1280
@@ -146,6 +147,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 11
 >>>>>>> Sarah
+=======
+  controlID: 44
+>>>>>>> Connor
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,9 +171,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 137
 =======
     y: 0
@@ -180,6 +185,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 12
 >>>>>>> Sarah
+=======
+  controlID: 45
+>>>>>>> Connor
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,10 +206,11 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1210
-    height: 318
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+    height: 447
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 138
 =======
     width: 1001
@@ -211,6 +220,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 13
 >>>>>>> Sarah
+=======
+  controlID: 46
+>>>>>>> Connor
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,11 +242,15 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 806
+<<<<<<< HEAD
     height: 318
 =======
     width: 667
     height: 316
 >>>>>>> Sarah
+=======
+    height: 447
+>>>>>>> Connor
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -271,11 +287,19 @@ MonoBehaviour:
     x: 667
 >>>>>>> Sarah
     y: 0
+<<<<<<< HEAD
     width: 817
     height: 369
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
+=======
+    width: 404
+    height: 447
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+>>>>>>> Connor
   m_Panes:
   - {fileID: 20}
   - {fileID: 19}
@@ -311,12 +335,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 318
+=======
+    y: 447
+>>>>>>> Connor
     width: 1210
-    height: 413
+    height: 284
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 64
 =======
     y: 316
@@ -327,6 +356,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 81
 >>>>>>> Sarah
+=======
+  controlID: 101
+>>>>>>> Connor
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,6 +376,7 @@ MonoBehaviour:
     x: 248
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -353,6 +386,11 @@ MonoBehaviour:
     width: 667
     height: 271
   m_MinSize: {x: 202, y: 221}
+=======
+    width: 806
+    height: 284
+  m_MinSize: {x: 102, y: 121}
+>>>>>>> Connor
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
@@ -386,8 +424,13 @@ MonoBehaviour:
 =======
     x: 667
     y: 0
+<<<<<<< HEAD
     width: 334
     height: 271
+=======
+    width: 404
+    height: 284
+>>>>>>> Connor
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 21}
@@ -563,6 +606,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 410
     width: 804
     height: 392
@@ -572,6 +616,11 @@ MonoBehaviour:
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
 >>>>>>> Sarah
+=======
+    y: 539
+    width: 804
+    height: 263
+>>>>>>> Connor
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -583,6 +632,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     m_HBaseRangeMin: -402
     m_HBaseRangeMax: 402
+<<<<<<< HEAD
     m_VBaseRangeMin: -187.5
     m_VBaseRangeMax: 187.5
 =======
@@ -591,6 +641,10 @@ MonoBehaviour:
     m_VBaseRangeMin: -116.5
     m_VBaseRangeMax: 116.5
 >>>>>>> Sarah
+=======
+    m_VBaseRangeMin: -123
+    m_VBaseRangeMax: 123
+>>>>>>> Connor
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -609,8 +663,9 @@ MonoBehaviour:
       y: 17
 <<<<<<< HEAD
       width: 804
-      height: 375
+      height: 246
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 402, y: 187.5}
 =======
       width: 665
@@ -618,6 +673,9 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 332.5, y: 116.5}
 >>>>>>> Sarah
+=======
+    m_Translation: {x: 402, y: 123}
+>>>>>>> Connor
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -626,8 +684,9 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< HEAD
       x: -402
-      y: -187.5
+      y: -123
       width: 804
+<<<<<<< HEAD
       height: 375
 =======
       x: -332.5
@@ -635,15 +694,22 @@ MonoBehaviour:
       width: 665
       height: 233
 >>>>>>> Sarah
+=======
+      height: 246
+>>>>>>> Connor
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 804, y: 392}
 =======
   m_LastWindowPixelSize: {x: 665, y: 250}
 >>>>>>> Sarah
+=======
+  m_LastWindowPixelSize: {x: 804, y: 263}
+>>>>>>> Connor
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -673,7 +739,7 @@ MonoBehaviour:
     y: 92
 <<<<<<< HEAD
     width: 804
-    height: 297
+    height: 426
   m_SceneLighting: 1
   lastFramingTime: 2160.518137859277
 =======
@@ -723,6 +789,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 8.189144
     speed: 2
     m_Value: 8.189144
@@ -731,6 +798,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 26.735271
 >>>>>>> Sarah
+=======
+    m_Target: 25.719467
+    speed: 2
+    m_Value: 25.719467
+>>>>>>> Connor
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -796,9 +868,10 @@ MonoBehaviour:
 >>>>>>> Sarah
     y: 92
     width: 400
-    height: 297
+    height: 426
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 5e280000
     m_LastClickedID: 10334
@@ -808,6 +881,11 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: 4cd5ffff50d5ffff9efbffff00000000c2290000
 >>>>>>> Sarah
+=======
+    m_SelectedIDs: 462a0000
+    m_LastClickedID: 10822
+    m_ExpandedIDs: b8fbffff00000000
+>>>>>>> Connor
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -853,9 +931,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 410
+    y: 539
     width: 804
-    height: 392
+    height: 263
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
 --- !u!114 &20
@@ -915,6 +993,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 819
     y: 454
     width: 404
@@ -926,6 +1005,12 @@ MonoBehaviour:
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
 >>>>>>> Sarah
+=======
+    x: 808
+    y: 539
+    width: 400
+    height: 263
+>>>>>>> Connor
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -939,16 +1024,25 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     - Assets/Sprites
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Sprites
+=======
+    - Assets/Scripts/Mc
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Scripts/Mc
+>>>>>>> Connor
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Sarah\SkyDrive\Documents\GameJam-SideAffects\SideFX
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: dc260000
     m_LastClickedID: 9948
@@ -968,6 +1062,12 @@ MonoBehaviour:
     m_LastClickedID: 10208
     m_ExpandedIDs: 00000000942700000c28000022280000f8280000ffffff7f
 >>>>>>> Sarah
+=======
+    scrollPos: {x: 0, y: 62}
+    m_SelectedIDs: 32280000
+    m_LastClickedID: 10290
+    m_ExpandedIDs: 00000000ac270000082800001228000024280000be28000000ca9a3bffffff7f
+>>>>>>> Connor
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -996,10 +1096,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000090260000d2260000dc260000ea26000060270000
 =======
     m_ExpandedIDs: 00000000942700000c28000022280000f8280000
 >>>>>>> Sarah
+=======
+    m_ExpandedIDs: 00000000ac270000082800001228000024280000be280000
+>>>>>>> Connor
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1026,26 +1130,30 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
 <<<<<<< HEAD
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> Connor
     m_ExpandedInstanceIDs: c62300009c270000
 =======
     m_ExpandedInstanceIDs: c62300009c270000bc2a0000f8270000b42a000026420000
 >>>>>>> Sarah
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Mc
+      m_OriginalName: Mc
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10290
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:
@@ -1056,12 +1164,17 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 25}
     m_GridSize: 16
 =======
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 71
 >>>>>>> Sarah
+=======
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+>>>>>>> Connor
   m_DirectoriesAreaWidth: 115
 --- !u!114 &16
 MonoBehaviour:

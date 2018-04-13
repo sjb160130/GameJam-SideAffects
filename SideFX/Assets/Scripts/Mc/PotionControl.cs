@@ -9,7 +9,12 @@ public class PotionControl : MonoBehaviour {
     public GameObject potion;
     public LayerMask MissLayer;
     public GameObject TimeExplosion;
+<<<<<<< HEAD
     
+=======
+    public GameObject Sludge;
+
+>>>>>>> Connor
     private bool timerGo = false;
     public float timer = 10f;
     // Use this for initialization
@@ -30,14 +35,27 @@ public class PotionControl : MonoBehaviour {
             {
                 Instantiate(TimeExplosion,transform.position,transform.rotation);
             }
+<<<<<<< HEAD
+=======
+            if (gameObject.CompareTag("Poison"))
+            {
+                Instantiate(Sludge, gameObject.transform.position,Sludge.transform.rotation);
+            }
+>>>>>>> Connor
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("enemy"))
         {
             if (gameObject.CompareTag("Ice"))
             {
+<<<<<<< HEAD
                 Instantiate(TimeExplosion, transform.position, transform.rotation);
             }
+=======
+                Instantiate(TimeExplosion);
+            }
+
+>>>>>>> Connor
             Destroy(gameObject);
         }
     }

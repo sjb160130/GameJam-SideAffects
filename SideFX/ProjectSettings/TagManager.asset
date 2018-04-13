@@ -16,6 +16,10 @@ TagManager:
   - Ice
   - Heal
   - TimeSlow
+<<<<<<< HEAD
+=======
+  - sludge
+>>>>>>> Connor
   layers:
   - Default
   - TransparentFX

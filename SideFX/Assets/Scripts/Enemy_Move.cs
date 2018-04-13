@@ -111,6 +111,14 @@ public class Enemy_Move : MonoBehaviour {
             Debug.Log("hit");
             decreaseHealthbar();
         }
+        if(trig.gameObject.tag == "sludge" && cur_Health > 0){
+            decreaseHealthbar();
+        }
+        if (trig.gameObject.tag == "TimeSlow")
+        {
+
+            slowed = true;
+        }
     }
     public void SetHealthBar(float myHealth)
     {

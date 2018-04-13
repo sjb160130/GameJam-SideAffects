@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NatureSpawner.cs" />
     <Compile Include="Assets\Scripts\Camera_System.cs" />
     <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
@@ -297,6 +298,9 @@
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />
+    <Compile Include="Assets\sludge.cs" />
+    <Compile Include="Assets\TimeExplosionScript.cs" />
+    <Compile Include="Assets\wolfMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextFiles\Bear.txt" />

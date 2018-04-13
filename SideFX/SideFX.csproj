@@ -286,6 +286,7 @@
     <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\Enemy_Move.cs" />
+    <Compile Include="Assets\Scripts\Enemy_Move1.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Animator.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Health.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Movement.cs" />

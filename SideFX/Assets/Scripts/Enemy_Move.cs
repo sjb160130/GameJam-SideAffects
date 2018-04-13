@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy_Move : MonoBehaviour {
 
     public int EnemySpeed;
+    private bool slowed = false;
     public int XMoveDirection;
     public GameObject Text_Manager;
     public GameObject Text_Manager1;
@@ -91,7 +92,14 @@ public class Enemy_Move : MonoBehaviour {
     {
         //This is a 
         yield return new WaitForSeconds(1);    //Wait one 
-        EnemySpeed = 4;
+        if (slowed)
+        {
+            EnemySpeed = 1;
+        }
+        else
+        {
+            EnemySpeed = 4;
+        }
     }
 
     void FlipPlayer() {
@@ -106,10 +114,23 @@ public class Enemy_Move : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D trig)
     {
        
-        if (trig.gameObject.tag == "potion" && cur_Health > 0)
+        if (trig.gameObject.tag == "Poison" && cur_Health > 0)
         {
             Debug.Log("hit");
             decreaseHealthbar();
+        }
+        if(trig.gameObject.tag == "TimeSlow")
+        {
+
+            slowed = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "TimeSlow")
+        {
+
+            slowed = false;
         }
     }
     public void SetHealthBar(float myHealth)

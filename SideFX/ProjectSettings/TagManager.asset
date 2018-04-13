@@ -9,6 +9,9 @@ TagManager:
   - coin
   - enemy
   - potion
+  - IcePotionRecip
+  - PoiPotionRecip
+  - HeaPotionRecip
   layers:
   - Default
   - TransparentFX

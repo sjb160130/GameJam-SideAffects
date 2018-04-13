@@ -70,26 +70,23 @@
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Inventory.cs" />
     <Compile Include="Assets\Scripts\Camera_System.cs" />
     <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\Enemy_Move.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Animator.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Health.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Movement.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_ThrowGrab.cs" />
     <Compile Include="Assets\Scripts\Mc\Player_Potions.cs" />
-    <Compile Include="Assets\Scripts\PotionControl.cs" />
-    <Compile Include="Assets\Scripts\PotionGun.cs" />
+    <Compile Include="Assets\Scripts\Mc\PotionControl.cs" />
+    <Compile Include="Assets\Scripts\Mc\PotionGun.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />

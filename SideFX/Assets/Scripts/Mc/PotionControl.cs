@@ -8,8 +8,10 @@ public class PotionControl : MonoBehaviour {
     Rigidbody2D rb;
     public GameObject potion;
     public LayerMask MissLayer;
+    public GameObject player;
     public GameObject TimeExplosion;
     public GameObject Sludge;
+    
 
     private bool timerGo = false;
     public float timer = 10f;
@@ -18,8 +20,8 @@ public class PotionControl : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         //rb.isKinematic = true;
         transform = GetComponent<Transform>();
-       
-        
+
+        player = GameObject.Find("MC");
         rb.AddForce(transform.up * thrust);
         
     }
@@ -34,6 +36,10 @@ public class PotionControl : MonoBehaviour {
             if (gameObject.CompareTag("Poison"))
             {
                 Instantiate(Sludge, gameObject.transform.position,Sludge.transform.rotation);
+            }
+            if (gameObject.CompareTag("Heal"))
+            {
+                player.transform.position = transform.position;
             }
             Destroy(gameObject);
         }

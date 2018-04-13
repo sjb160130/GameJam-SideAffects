@@ -9,8 +9,10 @@ public class MC_Health : MonoBehaviour {
     public int health;
     public GameObject playerHealthUI;
     public int bearHealth = 10;
-	// Update is called once per frame
-	void Update () {
+    private bool invence = false;
+
+
+    void Update () {
         if (health <=0 ){
             Die();
         }
@@ -23,10 +25,26 @@ public class MC_Health : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D trig)
     {
-        if (trig.gameObject.tag == "enemy" && bearHealth > 0)
+        if (!invence)
         {
-            health -= 1;
-            bearHealth -= 1;
+            if (trig.gameObject.tag == "enemy" && bearHealth > 0)
+            {
+                health -= 1;
+                bearHealth -= 1;
+                invence = true;
+                Invoke("ResetInvol", 1.5f);
+            }
+            if (trig.gameObject.tag == "sludge" )
+            {
+                health -= 1;
+                bearHealth -= 1;
+                invence = true;
+                Invoke("ResetInvol", 1.5f);
+            }
         }
+    }
+    private void ResetInvol()
+    {
+        invence = false;
     }
 }

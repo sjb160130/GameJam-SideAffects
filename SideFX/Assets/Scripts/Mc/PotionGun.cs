@@ -19,16 +19,29 @@ public class PotionGun : MonoBehaviour {
     public Animator PPotion;
     public Animator HPotion;
     public Animator IcePotion;
+    public bool shotable=true;
 
     // Use this for initialization
     void Start () {
-        
+        timeBetweenthrow = 5f;
     }
 	
 	// Update is called once per frame
 	void Update () {
         
-        //var go = Instantiate(potion, transform.position, q);
+       /* if (isShooting)
+        {
+            throwCounter -= Time.time;
+            if(throwCounter <= 0)
+            {
+                throwCounter = timeBetweenthrow;
+                Instantiate(inv.Poison, transform.position, transform.rotation);   
+            }
+            else
+            {
+                throwCounter = 0;
+            }
+        }*/
 
     }
     public void Shoot()
@@ -39,11 +52,25 @@ public class PotionGun : MonoBehaviour {
 
         var q = Quaternion.FromToRotation(Vector3.up, pos - transform.position);
         //Debug.Log("?");
-        if (hasIcePotion)
+        if (inv.position == 0)
+        {
+            Debug.Log("fuckme");
+        }
+        if (shotable && inv.position == 0)
+        {
+            Instantiate(inv.Poison, transform.position, q);
+            shotable = false;
+            Invoke("slowBullets", 2f);
+        }
+        if (hasIcePotion&& CurrPotion != inv.Poison)
         {
             var go = Instantiate(CurrPotion, transform.position, q);
         }
        
+    }
+    void slowBullets()
+    {
+        shotable = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -11,7 +11,6 @@ public class MC_Movement : MonoBehaviour {
     private float moveX;
     public bool falling = false;
     public PotionGun potiongun;
-    
 
 	// Use this for initialization
 	void Start () {

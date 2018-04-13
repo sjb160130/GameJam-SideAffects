@@ -217,6 +217,27 @@
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
@@ -265,23 +286,17 @@
     <Compile Include="Assets\Scripts\Collectable.cs" />
     <Compile Include="Assets\Scripts\EndScene.cs" />
     <Compile Include="Assets\Scripts\Enemy_Move.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Inventory.cs" />
-=======
     <Compile Include="Assets\Scripts\Enemy_Move1.cs" />
->>>>>>> Sarah
     <Compile Include="Assets\Scripts\Mc\MC_Animator.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Health.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_Movement.cs" />
     <Compile Include="Assets\Scripts\Mc\MC_ThrowGrab.cs" />
     <Compile Include="Assets\Scripts\Mc\Player_Potions.cs" />
-    <Compile Include="Assets\Scripts\Mc\PotionControl.cs" />
-    <Compile Include="Assets\Scripts\Mc\PotionGun.cs" />
+    <Compile Include="Assets\Scripts\PotionControl.cs" />
+    <Compile Include="Assets\Scripts\PotionGun.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />
-    <Compile Include="Assets\sludge.cs" />
-    <Compile Include="Assets\TimeExplosionScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextFiles\Bear.txt" />

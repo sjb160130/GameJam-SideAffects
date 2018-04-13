@@ -12,6 +12,9 @@ TagManager:
   - IcePotionRecip
   - PoiPotionRecip
   - HeaPotionRecip
+  - Poison
+  - Ice
+  - Heal
   layers:
   - Default
   - TransparentFX

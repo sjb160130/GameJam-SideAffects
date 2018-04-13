@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114170401297597328}
   m_Layer: 11
   m_Name: PoiPotion
-  m_TagString: potion
+  m_TagString: Poison
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

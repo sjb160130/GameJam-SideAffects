@@ -97,10 +97,15 @@ public class Enemy_Move : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D trig)
     {
        
-        if (trig.gameObject.tag == "potion" && cur_Health > 0)
+        if (trig.gameObject.tag == "Poison" && cur_Health > 0)
         {
             Debug.Log("hit");
             decreaseHealthbar();
+        }
+        if(trig.gameObject.tag == "Ice")
+        {
+            
+            EnemySpeed = 1;
         }
     }
     public void SetHealthBar(float myHealth)

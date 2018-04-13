@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50316714689571938}
   - component: {fileID: 58840887719589794}
   - component: {fileID: 114402866859487974}
-  - component: {fileID: 114170401297597328}
+  - component: {fileID: 114624775078188278}
   m_Layer: 11
   m_Name: IcePotion
   m_TagString: Ice
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1534335817492812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.272621, y: -0.21964926, z: 0}
   m_LocalScale: {x: 0.07902728, y: 0.08809196, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,23 +79,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.20875302}
   serializedVersion: 2
   m_Radius: 6.2909966
---- !u!114 &114170401297597328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534335817492812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228de450a3ce1844284404fdc48b45b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 300
-  potion: {fileID: 1534335817492812}
-  MissLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  timer: 3
 --- !u!114 &114402866859487974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +95,27 @@ MonoBehaviour:
   MissLayer:
     serializedVersion: 2
     m_Bits: 512
+  TimeExplosion: {fileID: 1409761281442668, guid: 93dabe91605222b4a877cb91ae94e2e9,
+    type: 2}
+  timer: 3
+--- !u!114 &114624775078188278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534335817492812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228de450a3ce1844284404fdc48b45b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 300
+  potion: {fileID: 1534335817492812}
+  MissLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  TimeExplosion: {fileID: 1409761281442668, guid: 93dabe91605222b4a877cb91ae94e2e9,
+    type: 2}
   timer: 3
 --- !u!212 &212269795941842232
 SpriteRenderer:

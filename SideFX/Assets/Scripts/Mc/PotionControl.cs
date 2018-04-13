@@ -8,7 +8,7 @@ public class PotionControl : MonoBehaviour {
     Rigidbody2D rb;
     public GameObject potion;
     public LayerMask MissLayer;
-    
+    public GameObject TimeExplosion;
     
     private bool timerGo = false;
     public float timer = 10f;
@@ -26,17 +26,39 @@ public class PotionControl : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("ground"))
         {
-            
+            if (gameObject.CompareTag("Ice"))
+            {
+                Instantiate(TimeExplosion,transform.position,transform.rotation);
+            }
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("enemy"))
         {
+            if (gameObject.CompareTag("Ice"))
+            {
+                Instantiate(TimeExplosion, transform.position, transform.rotation);
+            }
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("TimeSlow"))
+        {
+            rb.drag = 20;
+        }
+        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("TimeSlow"))
+        {
+            rb.drag = 0;
         }
     }
     // Update is called once per frame
     void Update () {
-		
+       
 	}
     
 }

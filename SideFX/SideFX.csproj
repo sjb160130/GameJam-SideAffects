@@ -70,9 +70,6 @@
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
@@ -93,6 +90,8 @@
     <Compile Include="Assets\Scripts\TextBox\Text_Importer.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager.cs" />
     <Compile Include="Assets\Scripts\TextBox\Text_manager1.cs" />
+    <Compile Include="Assets\sludge.cs" />
+    <Compile Include="Assets\TimeExplosionScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextFiles\Bear.txt" />

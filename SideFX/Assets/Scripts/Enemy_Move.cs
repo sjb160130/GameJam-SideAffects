@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy_Move : MonoBehaviour {
 
     public int EnemySpeed;
+    private bool slowed = false;
     public int XMoveDirection;
     public GameObject Text_Manager;
     public GameObject Text_Manager1;
@@ -19,8 +20,11 @@ public class Enemy_Move : MonoBehaviour {
     public bool dead = false;
     public TextAsset bear2;
 
+    Animator anim;
+
     private void Start()
     {
+        anim = GetComponent<Animator>();
         cur_Health = max_health;
         //InvokeRepeating("decreaseHealthbar", 1f, 1f);
     }
@@ -57,6 +61,10 @@ public class Enemy_Move : MonoBehaviour {
         {
             BearRunsAgain();
         }
+        if(dead == true)
+        {
+            anim.SetBool("Run", false);
+        }
         if(cur_Health == 0 && dead == false)
         {
             Debug.Log("ohboi");
@@ -67,7 +75,8 @@ public class Enemy_Move : MonoBehaviour {
             Text_Manager1.GetComponent<Text_manager1>().EnableTextBox();
             if (Input.GetKeyDown(KeyCode.Return) && dead == true){
                Text_Manager1.GetComponent<Text_manager1>().DisableTextBox();
-                dead = false;
+                Debug.Log("I love sarah");
+                dead = false;;
             }
         }
 
@@ -76,13 +85,21 @@ public class Enemy_Move : MonoBehaviour {
     void BearRunsAgain()
     {
         StartCoroutine("Wait");
+        anim.SetBool("Run", true);
     }
 
     IEnumerator Wait()
     {
         //This is a 
-        yield return new WaitForSeconds(2);    //Wait one 
-        EnemySpeed = 4;
+        yield return new WaitForSeconds(1);    //Wait one 
+        if (slowed)
+        {
+            EnemySpeed = 1;
+        }
+        else
+        {
+            EnemySpeed = 4;
+        }
     }
 
     void FlipPlayer() {
@@ -102,10 +119,18 @@ public class Enemy_Move : MonoBehaviour {
             Debug.Log("hit");
             decreaseHealthbar();
         }
-        if(trig.gameObject.tag == "Ice")
+        if(trig.gameObject.tag == "TimeSlow")
         {
-            
-            EnemySpeed = 1;
+
+            slowed = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "TimeSlow")
+        {
+
+            slowed = false;
         }
     }
     public void SetHealthBar(float myHealth)

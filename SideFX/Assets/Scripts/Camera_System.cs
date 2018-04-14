@@ -2,24 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_System : MonoBehaviour {
+public class Camera_System : MonoBehaviour
+{
 
     public GameObject player;
     public float xMin;
     public float xMax;
-    public float yMin;
+    public float yMin = .2f;
     public float yMax;
+    public bool bossBattle = false;
 
-	// Use this for initialization
-	void Start () {
-       player = GameObject.FindGameObjectWithTag ("player");
-            
-	}
-	
-	// Update is called once per frame
-	void LateUpdate () {
+    // Use this for initialization
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("player");
+
+    }
+    private void Update()
+    {
+        
+    }
+    // Update is called once per frame
+    void LateUpdate()
+    {
         float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
         float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+
         gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
     }
+
 }

@@ -89,11 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228de450a3ce1844284404fdc48b45b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 400
+  thrust: 500
   potion: {fileID: 1534335817492812}
   MissLayer:
     serializedVersion: 2
     m_Bits: 512
+  player: {fileID: 0}
   TimeExplosion: {fileID: 1409761281442668, guid: 93dabe91605222b4a877cb91ae94e2e9,
     type: 2}
   Sludge: {fileID: 0}

@@ -67,7 +67,8 @@ public class Enemy_Move : MonoBehaviour {
         }
         if(cur_Health == 0 && dead == false)
         {
-            Debug.Log("ohboi");
+            Destroy(gameObject);
+            //Debug.Log("ohboi");
             XMoveDirection = 0;
             EnemySpeed = 0;
             bear_Collider.isTrigger = false;
@@ -75,11 +76,11 @@ public class Enemy_Move : MonoBehaviour {
             Text_Manager1.GetComponent<Text_manager1>().EnableTextBox();
             if (Input.GetKeyDown(KeyCode.Return) && dead == true){
                Text_Manager1.GetComponent<Text_manager1>().DisableTextBox();
-                Debug.Log("I love sarah");
+               // Debug.Log("I love sarah");
                 dead = false;;
             }
         }
-
+        
    }
 
     void BearRunsAgain()
@@ -113,7 +114,6 @@ public class Enemy_Move : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D trig)
     {
-       
         if (trig.gameObject.tag == "Poison" && cur_Health > 0)
         {
             Debug.Log("hit");
@@ -124,7 +124,6 @@ public class Enemy_Move : MonoBehaviour {
         }
         if (trig.gameObject.tag == "TimeSlow")
         {
-
             slowed = true;
         }
     }

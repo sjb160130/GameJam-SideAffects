@@ -27,7 +27,7 @@ public class MC_Health : MonoBehaviour {
     {
         if (!invence)
         {
-            if (trig.gameObject.tag == "enemy" && bearHealth > 0)
+            if (trig.gameObject.tag == "enemy" || trig.gameObject.tag == "gish" && bearHealth > 0)
             {
                 health -= 1;
                 bearHealth -= 1;

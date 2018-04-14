@@ -14,7 +14,8 @@ public class MC_Movement : MonoBehaviour {
     public Inventory inv;
     Rigidbody2D rb;
     public bool slowed = false;
-    
+    public Camera_System cam;
+    public GameObject gish;
 
 	// Use this for initialization
 	void Start () {
@@ -83,9 +84,9 @@ public class MC_Movement : MonoBehaviour {
         {
             rb.gravityScale = -5;
         }
-        if (collision.CompareTag("NatureBoi"))
+        if (collision.CompareTag("bossCam"))
         {
-
+            gish.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

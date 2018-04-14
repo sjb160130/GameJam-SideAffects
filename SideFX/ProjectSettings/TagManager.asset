@@ -18,6 +18,10 @@ TagManager:
   - TimeSlow
   - sludge
   - NatureBois
+  - bossCam
+  - gish
+  - right
+  - leftl
   layers:
   - Default
   - TransparentFX
@@ -32,7 +36,7 @@ TagManager:
   - Enemy
   - potions
   - MC
-  - 
+  - Potionwall
   - 
   - 
   - 

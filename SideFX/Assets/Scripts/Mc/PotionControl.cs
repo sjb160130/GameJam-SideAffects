@@ -11,7 +11,8 @@ public class PotionControl : MonoBehaviour {
     public GameObject player;
     public GameObject TimeExplosion;
     public GameObject Sludge;
-    
+  
+
 
     private bool timerGo = false;
     public float timer = 10f;
@@ -32,14 +33,17 @@ public class PotionControl : MonoBehaviour {
             if (gameObject.CompareTag("Ice"))
             {
                 Instantiate(TimeExplosion,transform.position,transform.rotation);
+                
             }
             if (gameObject.CompareTag("Poison"))
             {
                 Instantiate(Sludge, gameObject.transform.position,Sludge.transform.rotation);
+                
             }
             if (gameObject.CompareTag("Heal"))
             {
                 player.transform.position = transform.position;
+               
             }
             Destroy(gameObject);
         }
@@ -52,7 +56,15 @@ public class PotionControl : MonoBehaviour {
 
             Destroy(gameObject);
         }
-    }
+        if (other.gameObject.CompareTag("gish"))
+        {
+            if (gameObject.CompareTag("Ice"))
+            {
+                Instantiate(TimeExplosion, transform.position, transform.rotation);
+            }
+            Destroy(gameObject);
+        }
+        }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("TimeSlow"))
